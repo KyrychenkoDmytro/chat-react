@@ -1,0 +1,40 @@
+.SendMessage {
+    height: 120px;
+    width: 100%;
+    padding: 25px;
+
+    .wrapper-input {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 0 20px;
+        border-radius: 25px;
+        border: 1px solid #c2bcbc;
+        background-color: #fff;
+
+
+        input {
+            height: 67px;
+            width: 100%;
+            border: none;
+            color: #7b6c6c;
+            font-size: 20px;
+            outline: none;
+
+        }
+
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            padding: 0;
+            background-color: #fff;
+            background-image: url(../../../../public/icons/send.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            transform: rotate(45deg);
+            cursor: pointer;
+        }
+    }
+}

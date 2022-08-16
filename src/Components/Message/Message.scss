@@ -1,0 +1,54 @@
+.Message {
+    height: 60px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 60px;
+
+    &~.my {
+        flex-direction: row-reverse;
+
+        img {
+            display: none;
+        }
+
+        p {
+            background-color: #cacacb;
+            color: #3e3e40;
+            margin: 0;
+        }
+
+        span {
+            left: inherit;
+            right: 10px;
+        }
+    }
+
+    img {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    p {
+        position: relative;
+        top: -10px;
+        height: 60px;
+        padding: 10px;
+        margin: 0 0 0 10px;
+        background-color: #46465b;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    span {
+        position: absolute;
+        left: 10px;
+        bottom: -40px;
+        color: grey;
+        font-size: 14px;
+    }
+}

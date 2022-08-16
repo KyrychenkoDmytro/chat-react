@@ -1,0 +1,15 @@
+.Avatar {
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    &::after {
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        content: url(../../../public/icons/ok.svg);
+    }
+}

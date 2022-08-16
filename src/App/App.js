@@ -1,6 +1,7 @@
 import './App.scss';
-import Main from '../Components/Main/Main';
-import Sidebar from '../Sidebar/Sidebar';
+import Main from '../Containers/Main/Main';
+import Sidebar from '../Containers/Sidebar/Sidebar';
+import Footer from '../Components/Footer/Footer';
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
       <div className="wrapper">
       <Sidebar />
       <Main />
+      <Footer />
       </div>
+      
     </div>
   );
 }
