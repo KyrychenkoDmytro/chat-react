@@ -1,29 +1,35 @@
 .User {
     display: flex;
     height: 120px;
-    padding: 30px 20px;
+    padding: 20px;
+
     align-items: center;
     border-bottom: 1px solid #c2bcbc;
+
     &:last-child {
         border-bottom: none;
     }
 
     .info {
         margin-left: 20px;
+        max-width: 270px;
+        max-height: 70px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 
         .name {
             color: #3a2828;
             font-size: 18px;
         }
 
-        .masage {
+        .message {
             color: #7b6c6c;
-            font-size: 16px;
         }
     }
 
     .time {
         margin-left: auto;
-        color: #7b6c6c;
+        color: #3a2828;
     }
 }

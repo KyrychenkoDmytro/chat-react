@@ -3,28 +3,7 @@
         "id": "asde5e",
         "name": "Walter White",
         "img": "./icons/bad_breaking.svg",
-        "message": [
-            {
-                "mymessage": true,
-                "content": "Здарова",
-                "time": "4/22/17 4:00 AM"
-            },
-            {
-                "mymessage": false,
-                "content": "Привет",
-                "time": "4/22/17 6:20 AM"
-            },
-            {
-                "mymessage": true,
-                "content": "Как дела?",
-                "time": "4/22/17 7:30 AM"
-            },
-            {
-                "mymessage": false,
-                "content": "Норм",
-                "time": "4/22/17 8:46 AM"
-            }
-        ]
+        "message": []
     },
     {
         "id": "sdfdf4",

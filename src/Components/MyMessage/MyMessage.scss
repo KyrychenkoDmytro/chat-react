@@ -1,5 +1,6 @@
 .MyMessage {
-    height: 60px;
+    min-height: 60px;
+    max-width: 818px;
     display: flex;
     flex-direction: row-reverse;
     position: relative;
@@ -9,7 +10,9 @@
     p {
         position: relative;
         top: -10px;
-        height: 60px;
+        min-height: 60px;
+        max-width: inherit;
+        overflow-wrap: break-word;
         padding: 10px;
         border-radius: 25px;
         font-size: 18px;
