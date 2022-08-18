@@ -1,9 +1,9 @@
 import './Avatar.scss';
 
-const Avatar = () => {
+const Avatar = ({img}) => {
     return (
         <div className="Avatar">
-            <img src="./icons/avatar_1.svg" alt="avatar" />
+            <img src={img} alt="avatar" />
         </div>
     );
 }

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "asde5e",
+        "name": "Walter White",
+        "img": "./icons/bad_breaking.svg",
+        "message": [
+            {
+                "mymessage": true,
+                "content": "Здарова",
+                "time": "4/22/17 4:00 AM"
+            },
+            {
+                "mymessage": false,
+                "content": "Привет",
+                "time": "4/22/17 6:20 AM"
+            },
+            {
+                "mymessage": true,
+                "content": "Как дела?",
+                "time": "4/22/17 7:30 AM"
+            },
+            {
+                "mymessage": false,
+                "content": "Норм",
+                "time": "4/22/17 8:46 AM"
+            }
+        ]
+    },
+    {
+        "id": "sdfdf4",
+        "name": "Harley Quinn",
+        "img": "./icons/suicide_woman.svg",
+        "message": []
+    },
+    {
+        "id": "htgrt3",
+        "name": "Albert Einstein",
+        "img": "./icons/albert_einstein.svg",
+        "message": []
+    },
+    {
+        "id": "asdrg56",
+        "name": "Donald Trump",
+        "img": "./icons/donald_trump.svg",
+        "message": []
+    },
+    {
+        "id": "34sdfe",
+        "name": "Marilyn Monroe",
+        "img": "./icons/marilyn_monroe.svg",
+        "message": []
+    }
+]

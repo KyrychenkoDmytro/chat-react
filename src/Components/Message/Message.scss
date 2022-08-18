@@ -5,24 +5,24 @@
     align-items: center;
     margin-bottom: 60px;
 
-    &~.my {
-        flex-direction: row-reverse;
+    // &~.my {
+    //     flex-direction: row-reverse;
 
-        img {
-            display: none;
-        }
+    //     img {
+    //         display: none;
+    //     }
 
-        p {
-            background-color: #cacacb;
-            color: #3e3e40;
-            margin: 0;
-        }
+    //     p {
+    //         background-color: #cacacb;
+    //         color: #3e3e40;
+    //         margin: 0;
+    //     }
 
-        span {
-            left: inherit;
-            right: 10px;
-        }
-    }
+    //     span {
+    //         left: inherit;
+    //         right: 10px;
+    //     }
+    // }
 
     img {
         display: block;
@@ -46,6 +46,7 @@
 
     span {
         position: absolute;
+        min-width: max-content;
         left: 10px;
         bottom: -40px;
         color: grey;

@@ -1,18 +1,27 @@
 import './App.scss';
-import Main from '../Containers/Main/Main';
+import UserId from '../Containers/UserId/UserId';
 import Sidebar from '../Containers/Sidebar/Sidebar';
 import Footer from '../Components/Footer/Footer';
+import Home from '../Components/Home/Home';
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="wrapper">
-      <Sidebar />
-      <Main />
-      <Footer />
+    <Router>
+      <div className="App">
+        <div className="wrapper">
+          <Sidebar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/:id" element={<UserId />} />
+          </Routes>
+          <Footer />
+        </div>
       </div>
-      
-    </div>
+    </Router>
   );
 }
 
