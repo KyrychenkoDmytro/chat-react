@@ -9,35 +9,46 @@ const SendMessage = ({ id }) => {
     const dispatch = useDispatch();
     const inputRef = useRef();
 
+    const checkLocalStorage = (id, obj) => {
+        if (!localStorage.getItem(id)) {
+            localStorage.setItem(id, JSON.stringify([obj]));
+        } else {
+            const a = JSON.parse(localStorage.getItem(id));
+            a.push(obj);
+            localStorage.removeItem(id);
+            localStorage.setItem(id, JSON.stringify(a));
+        }
+    }
+
     const fetchAnswer = async () => {
         const { data } = await axios.get();
-        const messageInfo = [
-            id,
-            {
-                "mymessage": false,
-                "content": data.value,
-                "time": new Date().getTime()
-            }
-        ];
+        const obj = {
+            "mymessage": false,
+            "content": data.value,
+            "time": new Date().getTime()
+        };
+        const messageInfo = [id, [obj]];
         dispatch(addSend(messageInfo));
+        checkLocalStorage(id, obj);
     }
 
     const send = (event) => {
         event.preventDefault();
-        let value = inputRef.current.value;
-        const messageInfo = [
-            id,
-            {
-                "mymessage": true,
-                "content": value,
-                "time": new Date().getTime()
-            }
-        ];
-        dispatch(addSend(messageInfo));
 
-        setTimeout(fetchAnswer, 3000);
+        let value = inputRef.current.value;
+        const obj = {
+            "mymessage": true,
+            "content": value,
+            "time": new Date().getTime()
+        };
+        const messageInfo = [id, [obj]];
+        dispatch(addSend(messageInfo));
+        checkLocalStorage(id, obj);
+        setTimeout(fetchAnswer, 10000);
         inputRef.current.value = '';
     }
+
+
 
     return (
         <div className="SendMessage">

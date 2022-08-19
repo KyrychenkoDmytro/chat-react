@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 
 const UserId = ({data}) => {
     const { id } = useParams();
+    
     const message = useSelector((state) => state.send.value[id]);
     let info = data.filter((item) => item.id === id);
     info = info[0];
