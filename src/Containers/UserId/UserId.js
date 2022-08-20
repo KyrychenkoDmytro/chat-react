@@ -1,6 +1,6 @@
 import './UserId.scss';
 import Header from '../../Components/Header/Header';
-import ChatWindow from './ChatWindow/ChatWindow';
+import ChatWindow from '../../Components/ChatWindow/ChatWindow';
 import SendMessage from './SendMessage/SendMessage';
 
 import { useParams } from 'react-router-dom';

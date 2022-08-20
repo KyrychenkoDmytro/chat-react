@@ -4,6 +4,12 @@
     height: 60px;
     flex-shrink: 0;
 
+    img {
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+    }
+
 
     &::after {
         display: block;

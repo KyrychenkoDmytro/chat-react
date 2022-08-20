@@ -1,9 +1,9 @@
 import './User.scss';
-import Avatar from '../../../Components/Avatar/Avatar';
+import Avatar from '../Avatar/Avatar';
 
 
 
-const User = ({ img, name, id, content, time }) => {
+const User = ({ img, name, content, time }) => {
     const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     // const days = ['', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 

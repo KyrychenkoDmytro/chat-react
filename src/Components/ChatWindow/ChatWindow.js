@@ -1,6 +1,6 @@
 import './ChatWindow.scss';
-import Message from '../../../Components/Message/Message';
-import MyMessage from '../../../Components/MyMessage/MyMessage';
+import Message from '../Message/Message';
+import MyMessage from '../MyMessage/MyMessage';
 
 import { useRef, useEffect } from 'react';
 
