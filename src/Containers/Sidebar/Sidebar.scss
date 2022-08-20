@@ -30,6 +30,9 @@
         padding-top: 20px;
         overflow: auto;
         background-color: #fff;
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         h1 {
             margin-left: 20px;

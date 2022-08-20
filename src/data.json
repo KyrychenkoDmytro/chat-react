@@ -2,31 +2,26 @@
     {
         "id": "asde5e",
         "name": "Walter White",
-        "img": "./icons/bad_breaking.svg",
-        "message": []
+        "img": "./icons/bad_breaking.svg"
     },
     {
         "id": "sdfdf4",
         "name": "Harley Quinn",
-        "img": "./icons/suicide_woman.svg",
-        "message": []
+        "img": "./icons/suicide_woman.svg"
     },
     {
         "id": "htgrt3",
         "name": "Albert Einstein",
-        "img": "./icons/albert_einstein.svg",
-        "message": []
+        "img": "./icons/albert_einstein.svg"
     },
     {
         "id": "asdrg56",
         "name": "Donald Trump",
-        "img": "./icons/donald_trump.svg",
-        "message": []
+        "img": "./icons/donald_trump.svg"
     },
     {
         "id": "34sdfe",
         "name": "Marilyn Monroe",
-        "img": "./icons/marilyn_monroe.svg",
-        "message": []
+        "img": "./icons/marilyn_monroe.svg"
     }
 ]

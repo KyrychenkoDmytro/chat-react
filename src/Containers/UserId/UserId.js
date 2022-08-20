@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 const UserId = ({data}) => {
     const { id } = useParams();
     
-    const message = useSelector((state) => state.send.value[id]);
+    const messages = useSelector((state) => state.send.value[id]);
     let info = data.filter((item) => item.id === id);
     info = info[0];
     const { name, img } = info;
@@ -17,7 +17,7 @@ const UserId = ({data}) => {
     return (
         <div className="UserId">
             <Header img={img} name={name} />
-            <ChatWindow img={img} message={message} />
+            <ChatWindow img={img} messages={messages} />
             <SendMessage id={id} />
         </div>
     );
