@@ -18,7 +18,6 @@ function App() {
     messeges.map((item) => dispatch(addSend([item.id, JSON.parse(localStorage.getItem(item.id))])));
   }, [dispatch]);
 
-
   return (
     <Router>
       <div className="App">

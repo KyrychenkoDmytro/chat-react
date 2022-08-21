@@ -21,6 +21,7 @@ const User = ({ img, name, content, time }) => {
             <div className="info">
                 <div className='name'>{name}</div>
                 <span className='message'>{content ? content : ''}</span>
+                <div className='time-md'>{time ? timeMessage() : ''}</div>
             </div>
             <div className="time">{time ? timeMessage() : ''}</div>
         </div>

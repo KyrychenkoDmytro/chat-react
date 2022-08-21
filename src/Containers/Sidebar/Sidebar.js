@@ -24,14 +24,14 @@ const Sidebar = ({ data }) => {
         if (a['time'] > b['time']) return -1;
     });
 
-   const filteredByName = copy.filter((item) => item.name.toLowerCase().includes(inputValue.toLowerCase()));
+    const filteredByName = copy.filter((item) => item.name.toLowerCase().includes(inputValue.toLowerCase()));
 
     return (
         <div className="Sidebar">
-            <div className="Search">
+            <div className="search-wrapper">
                 <div className="login-wrapper">
-                <Link to="/"><Avatar img={imgLogin} /></Link>
-                <Login />
+                    <Link to="/"><Avatar img={imgLogin} /></Link>
+                    <Login />
                 </div>
                 <input onChange={(e) => setInputValue(e.target.value)} type="text" placeholder='Search or start new chat' />
             </div>

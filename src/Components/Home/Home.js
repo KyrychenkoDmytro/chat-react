@@ -7,10 +7,14 @@ const Home = () => {
     return (
         <div className="Home">
             <h1>{name
-                ? `Welcome to the club, ${name}!`
-                : 'Sign in to login'
+                ? `Welcome to the club, `
+                : 'Login to your account'
             }
-            </h1>
+                <span>{name
+                    ? `${name} `
+                    : ''
+                }</span>
+                !</h1>
         </div>
     );
 

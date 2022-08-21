@@ -1,0 +1,424 @@
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        'sidebar main'
+        'footer footer';
+    grid-template-columns: 2fr 3fr;
+    max-width: 1400px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #faf4f4;
+    border: 2px solid #c2bcbc;
+}
+
+@media (max-width:1599px) {
+    .wrapper {
+        max-width: 1240px;
+
+        .Sidebar {
+            .Chats {
+                .User {
+                    .info {
+                        max-width: 270px;
+                    }
+                }
+            }
+        }
+
+        .UserId {
+            .ChatWindow {
+
+                .Message,
+                .MyMessage {
+                    max-width: 722px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1299px) {
+    .wrapper {
+        max-width: 1140px;
+
+        .Sidebar {
+            .Chats {
+                .User {
+                    padding: 10px;
+
+                    .info {
+                        margin-left: 10px;
+                        max-width: 260px;
+                    }
+                }
+            }
+        }
+
+        .UserId {
+            .ChatWindow {
+
+                .Message,
+                .MyMessage {
+                    max-width: 663px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .wrapper {
+        max-width: 1040px;
+
+        .Sidebar {
+            .Chats {
+                padding-top: 0;
+
+                .User {
+                    height: 100px;
+                    padding: 5px;
+
+                    .Avatar {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    .info {
+                        max-width: 240px;
+                    }
+                }
+            }
+        }
+
+        .UserId {
+            .ChatWindow {
+                height: 540px;
+
+                .MyMessage,
+                .Message {
+                    max-width: 603px;
+                    min-height: 50px;
+                    margin-bottom: 40px;
+
+                    p {
+                        font-size: 16px;
+                        line-height: 30px;
+                        border-radius: 15px;
+
+                        span {
+                            bottom: -25px;
+                        }
+                    }
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+
+            .SendMessage {
+                height: 100px;
+                padding: 20px;
+
+                .wrapper-input {
+                    height: 60px;
+
+                    input {
+                        height: 58px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1099px) {
+    .wrapper {
+        max-width: 940px;
+
+        .Sidebar {
+            .search-wrapper {
+                padding: 15px;
+
+                input {
+                    margin-top: 40px;
+                    font-size: 16px;
+                }
+
+                ;
+            }
+
+            .Chats {
+                .User {
+                    height: 90px;
+
+                    .info {
+                        max-width: 300px;
+
+                        .name {
+                            font-size: 16px;
+                        }
+
+                        .message {
+                            font-size: 14px;
+                        }
+
+                        .time-md {
+                            display: block;
+                            color: #3a2828;
+                            font-size: 13px;
+                            margin-left: auto;
+                        }
+                    }
+
+                    .time {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .UserId {
+            .Header {
+                padding: 15px;
+            }
+
+            .ChatWindow {
+                height: 560px;
+
+                .Message,
+                .MyMessage {
+                    max-width: 542px;
+                    min-height: 44px;
+
+                    p {
+                        font-size: 15px;
+                        line-height: 24px;
+                        padding: 10px;
+
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+
+            .SendMessage {
+                height: 80px;
+                padding: 15px;
+
+                .wrapper-input {
+                    height: 50px;
+
+                    input {
+                        height: 48px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 999px) {
+    .wrapper {
+        max-width: 840px;
+
+        .Sidebar {
+            .Chats {
+                .User {
+                    .info {
+                        max-width: 262px;
+
+                    }
+
+                }
+            }
+        }
+
+        .UserId {
+            .ChatWindow {
+
+                .Message,
+                .MyMessage {
+                    max-width: 482px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 899px) {
+    .wrapper {
+        max-width: 740px;
+
+        .Sidebar {
+            .Chats {
+                .User {
+                    .info {
+                        max-width: 222px;
+
+                    }
+                }
+            }
+        }
+
+        .UserId {
+            .ChatWindow {
+
+                .Message,
+                .MyMessage {
+                    max-width: 422px;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 799px) {
+    .wrapper {
+        max-width: 640px;
+
+        .Sidebar {
+            .search-wrapper {
+                height: 140px;
+                padding: 10px;
+
+                .login-wrapper {
+                    height: 50px;
+
+                    .Avatar {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                input {
+                    height: 40px;
+                    margin-top: 25px;
+                    padding: 0 0 0 32px;
+                    background-position-x: 0;
+                    border-radius: 10px;
+                    font-size: 14px;
+                }
+            }
+
+            .Chats {
+                height: 600px;
+
+                h1 {
+                    font-size: 30px;
+                    margin: 10px;
+                }
+
+                .User {
+
+                    .info {
+                        max-width: 182px;
+                    }
+                }
+            }
+        }
+
+        .UserId {
+            .Header {
+                height: 80px;
+
+                .Avatar {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                h2 {
+                    font-size: 20px;
+                    margin: 0 0 0 10px;
+                }
+            }
+
+            .ChatWindow {
+                height: 580px;
+
+                .Message,
+                .MyMessage {
+                    max-width: 362px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    p {
+                        font-size: 14px;
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 659px) {
+    .wrapper {
+        max-width: 540px;
+
+        .Sidebar {
+
+            .Chats {
+
+                .User {
+
+                    .info {
+                        max-width: 142px;
+                    }
+                }
+            }
+        }
+
+        .UserId {
+            .ChatWindow {
+
+                .Message,
+                .MyMessage {
+                    max-width: 302px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 559px) {
+    .wrapper {
+        grid-template-areas:
+            'sidebar'
+            'main'
+            'footer';
+        grid-template-columns: 1fr;
+
+        .Sidebar {
+            border-right: none;
+
+            .Chats {
+                .User {
+                    justify-content: center;
+
+                    .info {
+                        min-width: 220px;
+                    }
+                }
+            }
+        }
+        .Home {
+            display: none;
+        }
+
+        .UserId {
+            display: none;
+        }
+    }
+}

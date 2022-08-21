@@ -10,16 +10,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.wrapper {
-  display: grid;
-  grid-template-areas:
-    'sidebar main'
-    'footer footer';
-  grid-template-columns: 2fr 3fr;
-  max-width: 1400px;
-  height: 800px;
-  margin: 0 auto;
-  background-color: #faf4f4;
-  border: 1px solid #c2bcbc;
-}
