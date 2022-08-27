@@ -5,7 +5,7 @@ import Footer from '../Components/Footer/Footer';
 import Home from '../Components/Home/Home';
 import data from '../data.json';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { addSend } from '../store/slices/sendSlice';
 import { useEffect } from 'react';

@@ -20,7 +20,9 @@ const Sidebar = ({ data }) => {
             elem.time = value[elem['id']][value[elem['id']].length - 1]['time']; //last time
         }
     }
+
     copy.sort((a, b) => {
+        if(a['time'] && !b['time']) return -1; 
         if (a['time'] > b['time']) return -1;
     });
 
