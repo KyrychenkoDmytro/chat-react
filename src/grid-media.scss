@@ -1,7 +1,7 @@
 .wrapper {
     display: grid;
     grid-template-areas:
-        'sidebar main'
+        'sidebar userId'
         'footer footer';
     grid-template-columns: 2fr 3fr;
     max-width: 1400px;
@@ -394,14 +394,21 @@
 
 @media (max-width: 559px) {
     .wrapper {
+
+        // overflow: hidden;
         grid-template-areas:
             'sidebar'
-            'main'
+            'userId'
             'footer';
+
         grid-template-columns: 1fr;
 
         .Sidebar {
             border-right: none;
+
+            &-small {
+                display: none;
+            }
 
             .Chats {
                 .User {
@@ -413,12 +420,36 @@
                 }
             }
         }
+
         .Home {
             display: none;
         }
 
         .UserId {
-            display: none;
+
+            .Header {
+                a {
+                    margin-left: auto;
+                    button {
+                        display: block;
+                        height: 40px;
+                        border-radius: 10px;
+                        padding: 10px;
+                        border: 2px solid #726a6a;
+                        color: #403434;
+                    }
+                }
+            }
+
+            .ChatWindow {
+
+                .Message,
+                .MyMessage {
+                    max-width: 516px;
+                    min-width: 296px;
+
+                }
+            }
         }
     }
 }
